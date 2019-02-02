@@ -10,7 +10,7 @@ void main(void){
 SET_TRIS_B (0x00);      /* 0x00 --> TRISB */
 SET_TRIS_C (0x00);      /* 0x00 --> TRISB */
 output_low(PIN_C7); 
-setup_adc_ports(ALL_ANALOG);  //Se ,configuran todas las entradas del puerto a como analógicas
+setup_adc_ports(ALL_ANALOG);  //Se ,configuran todas las entradas del puerto a como analÃ³gicas
 setup_adc(ADC_CLOCK_INTERNAL);  //Se activa el reloj interno del PIC
    
     for(i = 1;i<=adc;i++)
