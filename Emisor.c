@@ -3,7 +3,8 @@
 #fuses  XT
 #use    delay( clock = 4000000 )
 
-int i,adc=7;
+
+int32 adc=512,i;
 void main(void){
 
 //SET_TRIS_A (0xff);      /* 0xff --> TRISA */
@@ -16,6 +17,6 @@ setup_adc(ADC_CLOCK_INTERNAL);  //Se activa el reloj interno del PIC
     for(i = 1;i<=adc;i++)
       {
       output_toggle(PIN_C7);
-      delay_us(150);
+      delay_us(50);
       }
 }
