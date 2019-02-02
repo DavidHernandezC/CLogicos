@@ -7,9 +7,9 @@
 
 int n=0;
 
-#INT_EXT         //Atención a interrupción por cambio en RB0
+#INT_EXT         //AtenciÃ³n a interrupciÃ³n por cambio en RB0
 ext_isr()
-{             //Función de interrupción
+{             //FunciÃ³n de interrupciÃ³n
    n++;
    if (input(PIN_B0)==0) { //Possibly just slightly 'clearer' than using not 
       EXT_INT_EDGE(L_TO_H); 
@@ -23,7 +23,7 @@ void main(void)
 {
 set_tris_B(0x01);  // B0 como entrada, B7 como salida   
 port_b_pullups(TRUE);   //Pull-up para RB0
-enable_interrupts(int_ext);          //Habilita int. RB0…
+enable_interrupts(int_ext);          //Habilita int. RB0â€¦
 enable_interrupts(GLOBAL);    //Habilita int. general
 lcd_init();
 while(1){
